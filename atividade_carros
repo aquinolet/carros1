@@ -1,0 +1,29 @@
+class Carro:
+    def _init_ (self,marca,modelo,cor,ano):
+        self.marca = marca
+        self.modelo = modelo
+        self.cor = cor
+        self.ano = ano
+
+    def ligar (self):
+        print (self.modelo,'está ligado')
+
+    def desligar (self):
+        print (self.modelo,'está desligado')
+
+    def imprimir_dados (self):
+        print ('Informações do carro')
+        print ('Marca: ',self.marca)
+        print ('Modelo: ',self.modelo)
+        print ('Cor: ',self.cor)
+        print ('Ano: ',self.ano)
+
+carro1 = Carro('Fiat','Toro','Preto','2017')
+carro2 = Carro('Chevrolet','Cruze','Branco','2019')
+
+carro1.ligar()
+carro2.ligar()
+carro1.desligar()
+carro2.desligar()
+carro1.imprimir_dados()
+carro2.imprimir_dados()
